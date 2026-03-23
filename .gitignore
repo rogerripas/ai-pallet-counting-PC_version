@@ -1,0 +1,32 @@
+# Imágenes
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.gif
+*.tiff
+*.tif
+*.svg
+*.ico
+
+# Pesos de modelos
+*.pt
+*.pth
+*.onnx
+*.pb
+*.h5
+*.pkl
+*.bin
+*.safetensors
+
+# Carpetas de salida y benchmark
+salida/
+benchmark viajes pallet/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
