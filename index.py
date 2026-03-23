@@ -445,6 +445,8 @@ def _ejecutar_pipeline_lote(rutas_origen, carga_id=None):
                 if len(v) > cuenta:
                     i_cuenta = k
                     cuenta = len(v)
+            nombre_columna = {0: "left", 1: "center", 2: "right"}.get(i_cuenta, "unknown")
+            print(f"Columna seleccionada: {nombre_columna} (grupo {i_cuenta}, {cuenta} detecciones)")
             imgau = graficar(frame, groups[i_cuenta])
             iimgau = Image.fromarray(imgau)
             draw = ImageDraw.Draw(iimgau)
